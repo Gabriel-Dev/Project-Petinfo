@@ -1,0 +1,41 @@
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+section {
+    width: 45%;
+    height: max-content;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+    padding: 2.75rem 1.5rem;
+    width: 100%;
+    height: max-content;
+    border: 1px solid var(--grey6);
+}
+
+.title_and_button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about p {
+    max-width: 18.75rem;
+}
+
+.brand {
+    color: var(--brand1);
+}

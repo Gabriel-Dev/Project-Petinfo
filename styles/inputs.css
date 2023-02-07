@@ -1,0 +1,27 @@
+.inputs {
+    height: 2.75rem;
+    display: flex;
+    padding: 0 1rem;
+    background: var(--grey8);
+    border: 1px solid var(--grey6);
+    border-radius: var(--radius1);
+    outline-color: var(--grey1);
+    color: var(--grey1);
+}
+
+.inputs::placeholder {
+    color: var(--grey4);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+#content {
+    padding: 1rem;
+    height: max-content;
+    resize: none;
+
+}

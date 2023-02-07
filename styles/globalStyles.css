@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand1: hsl(230, 57%, 50%);
+  --brand2: hsl(230, 68%, 54%);
+  --grey1: hsl(210, 11%, 15%);
+  --grey1-50: hsla(210, 11%, 15%, 0.5);
+  --grey2: hsl(210, 10%, 23%);
+  --grey3: hsl(210, 9%, 31%);
+  --grey4: hsl(210, 7%, 56%);
+  --grey5: hsl(210, 11%, 71%);
+  --grey6: hsl(210, 16%, 93%);
+  --grey7: hsl(210, 17%, 95%);
+  --grey8: hsl(210, 17%, 98%);
+  --grey9: hsl(200, 100%, 99%);
+  --alert1: hsl(349, 57%, 50%);
+  --alert2: hsl(349, 69%, 55%);
+  --sucess1: hsl(162, 88%, 26%);
+
+  --radius1: .25rem;
+  --radius2: .5rem;
+
+  --font1: 2rem;
+  --font2: 1.5rem;
+  --font3: 1.25rem;
+  --font4: 1rem;
+  --font5: .875rem;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+textarea {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-size: var(--font1);
+  font-weight: 600;
+  color: var(--grey1);
+}
+
+h2 {
+  font-size: var(--font2);
+  font-weight: 500;
+  color: var(--grey1);
+}
+
+h3 {
+  font-size: var(--font3);
+  font-weight: 500;
+  color: var(--grey1);
+}
+
+p {
+  font-size: var(--font4);
+  font-weight: 400;
+  color: var(--grey3);
+  line-height: 150%;
+}
+
+label {
+  font-size: var(--font4);
+  font-weight: 600;
+  color: var(--grey1);
+}
+
+small {
+  font-size: var(--font5);
+  font-weight: 400;
+  color: var(--grey4);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none;
+}
+
+.disable {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.spinner {
+  animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(-1turn);
+  }
+}
+

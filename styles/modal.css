@@ -1,0 +1,150 @@
+.modal_wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--grey1-50);
+}
+
+.modal {
+    max-width: 800px;
+    margin: 10% auto;
+    height: max-content;
+    max-height: 70%;
+    padding: 2rem 1.5rem;
+    background-color: var(--grey9);
+    border-radius: var(--radius2);
+    overflow: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.875rem;
+    animation: opacity 0.5s;
+}
+
+.title_and_close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal .cancel_and_accept {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.text {
+    margin-top: 1rem;
+}
+
+.delete {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.modal_sucess,.modal_error {
+    width: 27.5rem;
+    height: 7.8125rem;
+    border-radius: var(--radius1);
+    padding: 1.3125rem 2rem;
+    box-shadow: 0px 4px 30px -12px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    background-color: white;
+    animation: translateY 5s;
+}
+
+.check_and_title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.check_and_title p {
+    color: var(--sucess1);
+}
+
+.modal_error img {
+    width: 20px;
+    height: 20px;
+}
+
+.modal_error p {
+    color: var(--alert1);
+}
+
+.modal_profile {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: var(--radius2);
+    box-shadow: 0px 4px 30px -12px rgba(0, 0, 0, 0.3);
+}
+
+.modal_profile p {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.modal_profile img {
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+}
+
+.modal_profile span {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal_profile span small {
+    color: var(--grey1);
+    pointer-events: none;
+}
+
+.modal_profile span:hover {
+    background-color: var(--grey7);
+    opacity: 1;
+}
+
+@keyframes translateY {
+    0% {
+        transform: translateY(150px);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(150px);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/inputs.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <title>Petinfo - Register</title>
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <form class="form">
+                <span class="title_and_button">
+                    <h3>Cadastro</h3>
+                    <button class="button_default button_white medium">Voltar para o login</button>
+                </span>
+                <label for="username">Usuário
+                    <input class="inputs" id="username" type="text" placeholder="Digite seu usuário aqui">
+                </label>
+                <label for="email">Email
+                    <input class="inputs" id="email" type="email" placeholder="Digite seu email aqui">
+                </label>
+                <label for="avatar">Link da foto de perfil
+                    <input class="inputs" id="avatar" type="text" placeholder="Insira o link aqui">
+                </label>
+                <label for="password">Senha
+                    <input class="inputs" id="password" type="password" placeholder="Digite sua senha aqui">
+                </label>
+                <button class="button_default button_brand disable register">Cadastrar</button>
+                <button class="button_default button_white">Voltar para o login</button>
+            </form>
+        </section>
+        <section class="about">
+            <h1>Petinfo</h1>
+            <h1 class="brand">Ooooooba!</h1>
+            <p>Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+            <span>
+                <img src="/assets/img/img-register.png" alt="imagem de gatos">
+            </span>
+        </section>
+    </main>
+    <div class="modal_sucess none move">
+        <span class="check_and_title">
+            <img src="/assets/img/check.png" alt="check">
+            <p>Sua conta foi criada com sucesso!</p>
+        </span>
+        <small>Agora você pode acessar os conteúdos utilizando
+            seu usuário e senha na página de login:
+            <span class="link">Acessar página de login</span></small>
+    </div>
+    <div class="modal_error none">
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

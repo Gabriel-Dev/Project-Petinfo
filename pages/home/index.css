@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.125rem 1rem;
+    max-height: 140px;
+}
+
+.nav_buttons {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    top: 3.5rem;
+    height: 9.375rem;
+}
+
+.nav_buttons>img {
+    width: 2.5625rem;
+    height: 2.5625rem;
+    border: 2px solid var(--brand1);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.bg_grey {
+    background-color: var(--grey8);
+    padding: 1rem 0;
+}
+
+.bg_grey h3 {
+    padding: 0 1rem;
+}
+
+.feed {
+    padding: 3rem 1rem;
+}
+
+.post_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.post div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_and_date {
+    display: flex;
+    align-items: center;
+}
+
+.profile_and_date img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    position: relative;
+    bottom: 2px;
+}
+
+.profile_and_date p {
+    font-size: var(--font5);
+    font-weight: 600;
+    padding: 0 1rem 0 .5rem;
+}
+
+.date {
+    color: var(--grey4);
+    font-weight: 600;
+    padding: 0 1rem;
+    border-left: 2px solid var(--grey5);
+}
+
+.edit_and_delete {
+    display: flex;
+    gap: 1rem;
+}

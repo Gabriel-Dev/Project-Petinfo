@@ -1,0 +1,57 @@
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+section {
+    width: 45%;
+    height: max-content;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+    padding: 2.75rem 1.5rem;
+    width: 100%;
+    height: max-content;
+    border: 1px solid var(--grey6);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about p {
+    max-width: 18.75rem;
+}
+
+.about span img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.none_account {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.none_account strong {
+    color: var(--grey3);
+}
+
+.brand {
+    color: var(--brand1);
+}
+
+.alert_email,
+.alert_password {
+    color: var(--alert1);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/inputs.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <title>Petinfo - Login</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="about">
+            <h1>Petinfo</h1>
+            <h1><span class="brand">Amor</span> e <span class="brand">carinho</span> por meio do conhecimento</h1>
+            <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+            <span>
+                <img src="/assets/img/img-login.jpg" alt="imagem de gatos">
+            </span>
+        </section>
+        <section>
+            <form class="form">
+                <h3>Login</h3>
+                <label for="email">Email
+                    <input class="inputs" id="email" type="email" placeholder="Digite seu email aqui">
+                    <small class="alert_email none">O email está incorreto</small>
+                </label>
+                <label for="password">Senha
+                    <input class="inputs" id="password" type="password" placeholder="Digite sua senha aqui">
+                    <small class="alert_password none">A senha está incorreta</small>
+                </label>
+                <button class="button_default button_brand disable access">Acessar</button>
+                <div class="none_account">
+                    <small><strong> Ainda não possui conta?</strong></small>
+                    <small class="">Clicando no botão abaixo, você pode se cadastrar rapidamente</small>
+                </div>
+                <button class="button_default button_white">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
